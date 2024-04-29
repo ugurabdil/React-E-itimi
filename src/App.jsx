@@ -1,24 +1,14 @@
 import { useState } from 'react'
 
 import './App.css'
-import Header from './Header'
-import { images } from './Data'
-import Images from './Images'
-import "./css/İmages.css"
-
+import Currency from './components/Currency'
 function App() {
+   
+
   return (
-   <div>
-    <Header/>
-    <div className='images-main'>
-    {
-      images?.map((imagess)=>(
-        <Images key={imagess.id} imagess={imagess}/>
-      ))
-    }
+    <div style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
+      <Currency/>
     </div>
-    
-   </div>
   )
 }
 
